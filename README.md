@@ -8,7 +8,7 @@ Links:
 
 Há duas maneiras de configurar uma pasta de um repositório git:
 
-1. Criar uma pasta vazia
+1. Criar uma pasta vazia e entrar nela
 2. Inicializar o git : `$ git init`
 3. Realizar o pull request: `$ git pull https://github.com/usuario/repositorio`
 4. Ir até a pasta e criar um branch pra você: `$ git checkout -b Nome`
