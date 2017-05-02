@@ -30,17 +30,18 @@ ou
  - Registrar suas mudanças: `$ git commit -m "Sua mensagem aqui"`
  - Fazer upload: `$ git push origin <branch>` (De preferência, no seu branch)
 
-##Lidar com branches
+## Lidar com branches
  - Ver os branches existentes e em qual está: `$ git branch`
  - Criar novo branch: `$ git branch <nome>`
  - Mudar de branch: `$ git checkout <nome>`
+ - Criar (caso não exista) e mudar de branch: `$ git checkout -b <nome>`
  
-###Atualizar o arquivo compartilhado
-Mesmo se você não quiser colocar os seus arquivos no git, tem de usar o seu branch para gerenciar melhor a mudança do arquivo principal.
+### Atualizar o arquivo compartilhado
  
-Achei uma solução bem simples pro nosso problema: [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
+Links:
+ - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
  
-Basicamente,você está no branch *Gustavo* e mudou certo arquivo que precisa ser atualizado no master. Faça o seguinte:
+Basicamente,você está no branch *Seu* e mudou certo arquivo que precisa ser atualizado no master. Faça o seguinte:
  
  1. Mude para o branch *master*: `$ git checkout master`
  2. Una os dois arquivos: `$ git checkout --patch Gustavo <arquivo>`
@@ -53,21 +54,9 @@ Basicamente,você está no branch *Gustavo* e mudou certo arquivo que precisa se
  6. Dê o upload dos arquivos: `$ git push`
  7. Dê o upload das tags: `$ git push --tags`
  
-##Cuidados
+## Cuidados
 
-Como deve saber, apenas parte do projeto é em dupla - a camada do SOUL, então é necessário alguns cuidados:
-
-![alt tag](http://www.ic.unicamp.br/~edson/disciplinas/mc404/2016-2s/abef/labs/trab02/files/pilha_de_sw.png)
->As camadas do LoCo e BiCo são individuais, por favor.
-
-###Seu próprio branch
-Não sei você, mas eu pretendo colocar todos os meus arquivos desse projeto no git, assim, só atualizarei a parte compartilhada.
-Qualquer coisa a gente muda no meio do caminho.
-Está dando muito certo, nos meus testes. Está legal :ok_hand:
-
-###Colocar o resto do seu projeto online
-Isso seria interessante pra debugarmos o código um do outro, se necessário. Só não cagar e misturar as coisas :thumbsup:.
-
+- Adicione cuidados aqui
 
 ##Tarefas:
-- [X] Terminar esse readme.
+- [X] Ler esse readme.
