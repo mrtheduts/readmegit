@@ -1,6 +1,6 @@
 # [Link para trabalho aqui](http://www.google.com.br)
 
-Links:
+Links para referência:
 - [Git - The Simple Guide](http://rogerdudler.github.io/git-guide/).
 - [Blog do Git](https://git-scm.com/blog).
 
@@ -13,28 +13,38 @@ Há duas maneiras de configurar uma pasta de um repositório git:
 3. Realizar o pull request: `$ git pull https://github.com/usuario/repositorio`
 4. Ir até a pasta e criar um branch pra você: `$ git checkout -b Nome`
 5. Dar push no branch: `$ git push origin Nome`
-6. Codar hardmente
+6. **Codar hardmente**
 
 ou
 
 1. Clonar: `$ git clone https://github.com/usuario/repositorio`
 2. Ir até a pasta e criar um branch pra você: `$ git checkout -b Nome`
 3. Dar push no branch: `$ git push origin Nome`
-4. Codar hardmente
+4. **Codar hardmente**
 
 ## Comandos
 
 ### Coisas básicas
+
  - Verificar status: `$ git status`
  - Adicionar arquivos no repositório: `$ git add <arquivos>`
  - Registrar suas mudanças: `$ git commit -m "Sua mensagem aqui"`
- - Fazer upload: `$ git push origin <branch>` (De preferência, no seu branch)
+ - Fazer upload: `$ git push origin <branch>`
 
 ### Lidar com branches
+
  - Ver os branches existentes e em qual está: `$ git branch`
  - Criar novo branch: `$ git branch <nome>`
  - Mudar de branch: `$ git checkout <nome>`
  - Criar (caso não exista) e mudar de branch: `$ git checkout -b <nome>`
+ 
+### Fundir dois branches (merge)
+
+1. Vá para o branch que continuará ativo
+2. `$ git merge <branch no qual mudanças foram feitas>`
+3. Resolva os conflitos
+4. Adicione, commite e dê push nas mudanças
+
  
 ### Atualizar apenas um arquivo compartilhado no master
  
@@ -54,9 +64,15 @@ Basicamente,você está no branch *Seu* e mudou certo arquivo que precisa ser at
  6. Dê o upload dos arquivos: `$ git push`
  7. Dê o upload das tags: `$ git push --tags`
  
+## Dicas
+
+- Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<numero de segundos>'`
+- [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - É um plugin para seu zsh (seu terminal pode ser bash ou zsh). Com o tema `ZSH_THEME="agnoster"` configurado no seu arquivo .zshrc e o plugin do git habilitado (por padrão) fica simples ver em qual branch está e se as mudanças foram commitadas. Vale a pena dar uma olhada.
+ 
 ## Cuidados
 
 - Adicione cuidados aqui
 
-##Tarefas:
+## Tarefas:
 - [X] Ler esse readme.
+- [ ] Modificar esse readme
