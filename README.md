@@ -2,7 +2,7 @@
 
 Links:
 - [Git - The Simple Guide](http://rogerdudler.github.io/git-guide/).
-- [blog do Git](https://git-scm.com/blog).
+- [Blog do Git](https://git-scm.com/blog).
 
 ## Começar a trabalhar:
 
@@ -30,13 +30,13 @@ ou
  - Registrar suas mudanças: `$ git commit -m "Sua mensagem aqui"`
  - Fazer upload: `$ git push origin <branch>` (De preferência, no seu branch)
 
-## Lidar com branches
+### Lidar com branches
  - Ver os branches existentes e em qual está: `$ git branch`
  - Criar novo branch: `$ git branch <nome>`
  - Mudar de branch: `$ git checkout <nome>`
  - Criar (caso não exista) e mudar de branch: `$ git checkout -b <nome>`
  
-### Atualizar o arquivo compartilhado
+### Atualizar apenas um arquivo compartilhado no master
  
 Links:
  - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
@@ -44,11 +44,11 @@ Links:
 Basicamente,você está no branch *Seu* e mudou certo arquivo que precisa ser atualizado no master. Faça o seguinte:
  
  1. Mude para o branch *master*: `$ git checkout master`
- 2. Una os dois arquivos: `$ git checkout --patch Gustavo <arquivo>`
+ 2. Una os dois arquivos: `$ git checkout --patch Nome <arquivo>`
  3. Gerencie as mudanças (pode aceitar parte por parte com 'y' ou tudo com 'a' ou editar o arquivo final com 'e')
  4. Atualize a tag: `$ git tag -a vx.y.z -m "Mudança"`
  
-    >Sendo: x = 0 ou 1 (projeto completo ou não), y += 1 a cada função adicionada e z += 1 quando bugs são corrigidos
+    >Sugestão: sendo x = 0 ou 1 (projeto completo ou não), y += 1 a cada função adicionada e z += 1 quando bugs são corrigidos
 
  5. Registre as mudanças com commit: `$ git commit -m "Texto aqui"`
  6. Dê o upload dos arquivos: `$ git push`
