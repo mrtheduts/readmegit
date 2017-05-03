@@ -70,14 +70,14 @@ Basicamente,você está no branch *Seu* e mudou certo arquivo que precisa ser at
  6. Dê o upload dos arquivos: `$ git push`
  7. Dê o upload das tags: `$ git push --tags`
  
+## Cuidados
+
+- Cuidado com formatação
+ 
 ## Dicas
 
 - Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<numero de segundos>'`
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - É um plugin para seu zsh (seu terminal pode ser bash ou zsh). Com o tema `ZSH_THEME="agnoster"` configurado no seu arquivo .zshrc e o plugin do git habilitado (por padrão) fica simples ver em qual branch está e se as mudanças foram commitadas. Vale a pena dar uma olhada.
- 
-## Cuidados
-
-- Cuidado com formatação
 
 ## Tarefas:
 - [X] Ler esse readme.
