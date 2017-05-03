@@ -1,5 +1,9 @@
 # [Link para trabalho aqui](http://www.google.com.br)
 
+<p align="left">
+ <img src=https://octodex.github.com/images/baracktocat.jpg width="155" height="155"  hspace="0" vspace="0" alt="Octocat">
+</p>
+
 Links para referência:
 - [Git - The Simple Guide](http://rogerdudler.github.io/git-guide/).
 - [Blog do Git](https://git-scm.com/blog).
@@ -12,6 +16,7 @@ Há duas maneiras de configurar uma pasta de um repositório git:
 2. Inicializar o git : `$ git init`
 3. Realizar o pull request: `$ git pull https://github.com/usuario/repositorio`
 4. Ir até a pasta e criar um branch pra você: `$ git checkout -b Nome`
+    >Sugestão: Para organizar melhor o projeto, recomendo criar diferentes branches para diferentes implementações
 5. Dar push no branch: `$ git push origin Nome`
 6. **Codar hardmente**
 
@@ -19,6 +24,7 @@ ou
 
 1. Clonar: `$ git clone https://github.com/usuario/repositorio`
 2. Ir até a pasta e criar um branch pra você: `$ git checkout -b Nome`
+    >Sugestão: Para organizar melhor o projeto, recomendo criar diferentes branches para diferentes implementações
 3. Dar push no branch: `$ git push origin Nome`
 4. **Codar hardmente**
 
@@ -71,7 +77,7 @@ Basicamente,você está no branch *Seu* e mudou certo arquivo que precisa ser at
  
 ## Cuidados
 
-- Adicione cuidados aqui
+- Cuidado com formatação
 
 ## Tarefas:
 - [X] Ler esse readme.
