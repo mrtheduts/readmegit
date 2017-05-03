@@ -4,7 +4,7 @@
  <img src=https://octodex.github.com/images/baracktocat.jpg width="155" height="155"  hspace="0" vspace="0" alt="Octocat">
 </p>
 
-Links para referência:
+#### Links para referência:
 - [Git - The Simple Guide](http://rogerdudler.github.io/git-guide/).
 - [Blog do Git](https://git-scm.com/blog).
 
@@ -50,12 +50,20 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
 
 ## Branches
 
+#### Links:
+ - [Network Graph](https://github.com/blog/39-say-hello-to-the-network-graph-visualizer)
+
 ### Lidar com branches
 
  - Ver os branches existentes e em qual está: `$ git branch`
  - Criar novo branch: `$ git branch <nome>`
  - Mudar de branch: `$ git checkout <nome>`
  - Criar (caso não exista) e mudar de branch: `$ git checkout -b <nome>`
+ 
+### Deletar branches
+
+- Localmente: `$ git branch -d <nome>`
+- Remotamente: `$ git push origin --delete <nome>`
  
 ### Fundir dois branches (merge)
 
@@ -71,11 +79,11 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
  
 ## Dicas
 
-- Configurar seu editor de texto padrão: `git config --global core.editor "vim"`
+- Configurar seu editor de texto padrão: `git config --global core.editor "seu_editor"`
 - Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - É um plugin para seu zsh (seu terminal pode ser bash ou zsh). Com o tema `ZSH_THEME="agnoster"` configurado no seu arquivo .zshrc e o plugin do git habilitado (por padrão) fica simples ver em qual branch está e se as mudanças foram commitadas. Vale a pena dar uma olhada.
 
-### Links específicos, mas possívelmente úteis:
+#### Links específicos, mas possívelmente úteis:
  - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
 
 
