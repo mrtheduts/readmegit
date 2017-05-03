@@ -35,6 +35,7 @@ ou
  - Verificar status: `$ git status`
  - Adicionar arquivos no repositório: `$ git add <arquivos>`
  - Registrar suas mudanças: `$ git commit -m "Sua mensagem aqui"`
+     >Sugestão: Se quiser pular o `git add` e adicionar automaticamente os arquivos que foram modificados - dos quais o git mantém relatório - basta adicionar um `-a` no `git commit`
  - Fazer upload: `$ git push origin <branch>`
 
 ### Usando Tags
@@ -47,6 +48,7 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
     
   - Dê o upload das tags: `$ git push --tags`
 
+## Branches
 
 ### Lidar com branches
 
@@ -61,6 +63,8 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
 2. `$ git merge <branch no qual mudanças foram feitas>`
 3. Resolva os conflitos
 4. Adicione, commite e dê push nas mudanças
+
+
 
  
 ### Atualizar apenas um arquivo compartilhado no master
@@ -82,7 +86,7 @@ Basicamente,você está no branch *Seu* e mudou certo arquivo que precisa ser at
  
 ## Dicas
 
-- Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<numero de segundos>'`
+- Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - É um plugin para seu zsh (seu terminal pode ser bash ou zsh). Com o tema `ZSH_THEME="agnoster"` configurado no seu arquivo .zshrc e o plugin do git habilitado (por padrão) fica simples ver em qual branch está e se as mudanças foram commitadas. Vale a pena dar uma olhada.
 
 ## Tarefas:
