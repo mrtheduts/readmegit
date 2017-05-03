@@ -61,33 +61,23 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
 
 1. Vá para o branch que continuará ativo
 2. `$ git merge --no-ff <branch no qual mudanças foram feitas>`
+    >Por que `--no-ff`? [`git merge` ou `git merge --no-ff`](http://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff)
 3. Resolva os conflitos
 4. Adicione, commite e dê push nas mudanças
-
-
-
- 
-### Atualizar apenas um arquivo compartilhado no master
- 
-Links:
- - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
- 
-Basicamente,você está no branch *Seu* e mudou certo arquivo que precisa ser atualizado no master. Faça o seguinte:
- 
- 1. Mude para o branch *master*: `$ git checkout master`
- 2. Una os dois arquivos: `$ git checkout --patch Nome <arquivo>`
- 3. Gerencie as mudanças (pode aceitar parte por parte com 'y' ou tudo com 'a' ou editar o arquivo final com 'e')
- 4. Registre as mudanças com commit: `$ git commit -m "Texto aqui"`
- 5. Dê o upload dos arquivos: `$ git push`
  
 ## Cuidados
 
-- Cuidado com formatação
+- Cuidado com a formatação
  
 ## Dicas
 
+- Configurar seu editor de texto padrão: `git config --global core.editor "vim"`
 - Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - É um plugin para seu zsh (seu terminal pode ser bash ou zsh). Com o tema `ZSH_THEME="agnoster"` configurado no seu arquivo .zshrc e o plugin do git habilitado (por padrão) fica simples ver em qual branch está e se as mudanças foram commitadas. Vale a pena dar uma olhada.
+
+Links específicos, mas possívelmente úteis:
+ - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
+
 
 ## Tarefas:
 - [X] Ler esse readme.
