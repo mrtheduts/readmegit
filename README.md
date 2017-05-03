@@ -75,7 +75,7 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
 - Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
 - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - É um plugin para seu zsh (seu terminal pode ser bash ou zsh). Com o tema `ZSH_THEME="agnoster"` configurado no seu arquivo .zshrc e o plugin do git habilitado (por padrão) fica simples ver em qual branch está e se as mudanças foram commitadas. Vale a pena dar uma olhada.
 
-Links específicos, mas possívelmente úteis:
+### Links específicos, mas possívelmente úteis:
  - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
 
 
