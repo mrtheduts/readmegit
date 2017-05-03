@@ -37,6 +37,7 @@ ou
  - Registrar suas mudanças: `$ git commit -m "Sua mensagem aqui"`
      >Sugestão: Se quiser pular o `git add` e adicionar automaticamente os arquivos que foram modificados - dos quais o git mantém relatório - basta adicionar um `-a` no `git commit`
  - Fazer upload: `$ git push origin <branch>`
+ - Verificar os commits feitos: `$ git log [--oneline]`
 
 ### Usando Tags
 
@@ -79,9 +80,10 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
  
 ## Dicas
 
-- Configurar seu editor de texto padrão: `git config --global core.editor "seu_editor"`
-- Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
-- [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - É um plugin para seu zsh (seu terminal pode ser bash ou zsh). Com o tema `ZSH_THEME="agnoster"` configurado no seu arquivo .zshrc e o plugin do git habilitado (por padrão) fica simples ver em qual branch está e se as mudanças foram commitadas. Vale a pena dar uma olhada.
+ - Você não precisa mais de uma conta premium para criar um repositório privado
+ - Configurar seu editor de texto padrão: `git config --global core.editor "seu_editor"`
+ - Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
+ - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - É um plugin para seu zsh (seu terminal pode ser bash ou zsh). Com o tema `ZSH_THEME="agnoster"` configurado no seu arquivo .zshrc e o plugin do git habilitado (por padrão) fica simples ver em qual branch está e se as mudanças foram commitadas. Vale a pena dar uma olhada.
 
 #### Links específicos, mas possívelmente úteis:
  - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
