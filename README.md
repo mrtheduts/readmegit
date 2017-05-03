@@ -60,7 +60,7 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
 ### Fundir dois branches (merge)
 
 1. Vá para o branch que continuará ativo
-2. `$ git merge <branch no qual mudanças foram feitas>`
+2. `$ git merge --no-ff <branch no qual mudanças foram feitas>`
 3. Resolva os conflitos
 4. Adicione, commite e dê push nas mudanças
 
