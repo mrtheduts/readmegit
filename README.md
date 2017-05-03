@@ -1,4 +1,4 @@
-# [Link para trabalho aqui](http://www.google.com.br)
+# [Link para trabalho aqui](https://www.github.com/mrtheduts/readmegit)
 
 <p align="left">
  <img src=https://octodex.github.com/images/baracktocat.jpg width="155" height="155"  hspace="0" vspace="0" alt="Octocat">
@@ -37,6 +37,17 @@ ou
  - Registrar suas mudanças: `$ git commit -m "Sua mensagem aqui"`
  - Fazer upload: `$ git push origin <branch>`
 
+### Usando Tags
+
+Tags servem para manter um certo controle da versão "oficial" do programa, servindo de atalho para certos commits. Elas podem ser lightweight e annotated. As lightweight só contém informações do autor da tag, da data e do hash do commit. Já as annotated (adicionando as flags -a e -m) guardam informações extras como o que mudou no commit, o autor original do repositório e podem ser verificadas pelo Gnu Privacy Guard.
+
+ - Atualize a tag: `$ git tag [-a] vx.y.z [-m "Mudança"]`
+ 
+    >Sugestão: sendo x = 0 ou 1 (projeto completo ou não), y += 1 a cada função adicionada e z += 1 quando bugs são corrigidos
+    
+  - Dê o upload das tags: `$ git push --tags`
+
+
 ### Lidar com branches
 
  - Ver os branches existentes e em qual está: `$ git branch`
@@ -62,13 +73,8 @@ Basicamente,você está no branch *Seu* e mudou certo arquivo que precisa ser at
  1. Mude para o branch *master*: `$ git checkout master`
  2. Una os dois arquivos: `$ git checkout --patch Nome <arquivo>`
  3. Gerencie as mudanças (pode aceitar parte por parte com 'y' ou tudo com 'a' ou editar o arquivo final com 'e')
- 4. Atualize a tag: `$ git tag -a vx.y.z -m "Mudança"`
- 
-    >Sugestão: sendo x = 0 ou 1 (projeto completo ou não), y += 1 a cada função adicionada e z += 1 quando bugs são corrigidos
-
- 5. Registre as mudanças com commit: `$ git commit -m "Texto aqui"`
- 6. Dê o upload dos arquivos: `$ git push`
- 7. Dê o upload das tags: `$ git push --tags`
+ 4. Registre as mudanças com commit: `$ git commit -m "Texto aqui"`
+ 5. Dê o upload dos arquivos: `$ git push`
  
 ## Cuidados
 
