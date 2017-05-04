@@ -2,14 +2,18 @@
 
 
  <img align = "left" src=https://octodex.github.com/images/baracktocat.jpg width="190" height="190"  hspace="20" vspace="5" alt="Octocat">
- 
- ***“Talk is cheap. Show me the code.”** <br /> ― Linus Torvalds*
 
 #### Links para referência:
-- [Git - The Simple Guide](http://rogerdudler.github.io/git-guide/).
+- [Git Docs](https://git-scm.com/documentation)
 - [Blog do Git](https://git-scm.com/blog).
+- [Git - The Simple Guide](http://rogerdudler.github.io/git-guide/).
 
 <br />
+<br />
+
+> ***“Talk is cheap. Show me the code.”** <br /> ― Linus Torvalds*
+
+
 
 ## Começar a trabalhar:
 
@@ -30,6 +34,12 @@ ou
     >Sugestão: Para organizar melhor o projeto, recomendo criar diferentes branches para diferentes implementações
 3. Dar push no branch: `$ git push origin Nome`
 4. **Codar hardmente**
+
+<br />
+
+ >***“A code is like love, it has created with clear intentions at the beginning, but it can get complicated.”** <br />― Gerry Geek, Ice Breakers for Project Managers: Jokes, Quotes, and Brainteasers*
+
+<br />
 
 ## Comandos
 
@@ -52,6 +62,12 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
     >Sugestão: sendo x = 0 ou 1 (projeto completo ou não), y += 1 a cada função adicionada e z += 1 quando bugs são corrigidos
     
   - Dê o upload das tags: `$ git push --tags`
+
+<br />
+
+ >***“I'm not a great programmer; I'm just a good programmer with great habits.”** <br /> ― Kent Beck*
+ 
+ <br />
 
 ## Branches
 
@@ -78,10 +94,22 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
 3. Resolva os conflitos
 4. Adicione, commite e dê push nas mudanças
  
+<br />
+ 
+ > ***“Programming isn't about what you know; it's about what you can figure out.”** <br />― Chris Pine, Learn to Program*
+ 
+<br />
+ 
 ## Cuidados
 
 - Não confunda a ordem dos adds, commits e pushes
 - Verifique se está no branch certo
+
+<br />
+
+ > ***“Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live”** <br />― John Woods*
+ 
+<br />
  
 ## Dicas
 
@@ -89,11 +117,23 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
  - Configurar seu editor de texto padrão: `git config --global core.editor "seu_editor"`
  - Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
  - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - É um plugin para seu zsh (seu terminal pode ser bash ou zsh). Com o tema `ZSH_THEME="agnoster"` configurado no seu arquivo .zshrc e o plugin do git habilitado (por padrão) fica simples ver em qual branch está e se as mudanças foram commitadas. Vale a pena dar uma olhada.
+ 
 
 #### Links específicos, mas possívelmente úteis:
  - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
 
+<br />
+
+ > ***“Think twice, code once.”** <br />― Waseem Latif*
+ 
+ <br />
 
 ## Tarefas:
 - [X] Ler esse readme.
 - [ ] Modificar esse readme
+
+<br />
+
+<p align="center"> 
+ <a href=https://imgs.xkcd.com/comics/new_bug.png><img src=https://imgs.xkcd.com/comics/new_bug.png a=https://imgs.xkcd.com/comics/new_bug.png></a>
+</p>
