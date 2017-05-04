@@ -3,9 +3,9 @@
 
  <img align = "left" src=https://octodex.github.com/images/baracktocat.jpg width="190" height="190"  hspace="20" vspace="5" alt="Octocat">
  
- >*“Talk is cheap. Show me the code.”*
+ *“Talk is cheap. Show me the code.”*
  
- >*― Linus Torvalds*
+ *― Linus Torvalds*
 
 #### Links para referência:
 - [Git - The Simple Guide](http://rogerdudler.github.io/git-guide/).
