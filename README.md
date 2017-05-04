@@ -1,8 +1,11 @@
 # [Link para trabalho aqui](https://www.github.com/mrtheduts/readmegit)
 
-<p align="left">
- <img src=https://octodex.github.com/images/baracktocat.jpg width="155" height="155"  hspace="0" vspace="0" alt="Octocat">
-</p>
+
+ <img align = "left" src=https://octodex.github.com/images/baracktocat.jpg width="190" height="190"  hspace="0" vspace="0" alt="Octocat">
+ 
+ >*“Talk is cheap. Show me the code.”*
+ 
+ >*― Linus Torvalds*
 
 #### Links para referência:
 - [Git - The Simple Guide](http://rogerdudler.github.io/git-guide/).
