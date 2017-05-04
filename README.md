@@ -37,7 +37,8 @@ ou
  - Registrar suas mudanças: `$ git commit -m "Sua mensagem aqui"`
      >Sugestão: Se quiser pular o `git add` e adicionar automaticamente os arquivos que foram modificados - dos quais o git mantém relatório - basta adicionar um `-a` no `git commit`
  - Fazer upload: `$ git push origin <branch>`
- - Verificar os commits feitos: `$ git log [--oneline]`
+ - Verificar os commits feitos: `$ git log [--oneline] [--graph] [--decorate]`
+    >`git log`, apenas, mostra os commits e seus autores, dentre outras informaçõe; `--oneline`, como o nome mostra, deixa de lado algumas informações e mostra apenas a hash e o comentario do commit; `--graph` imprime uma árvore do projeto e com `--decorate` ela é impressa de diferentes cores, baseadas em qual branch ela está.
 
 ### Usando Tags
 
