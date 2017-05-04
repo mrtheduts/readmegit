@@ -77,7 +77,8 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
  
 ## Cuidados
 
-- Cuidado com a formatação
+- Não confunda a ordem dos adds, commits e pushes
+- Verifique se está no branch certo
  
 ## Dicas
 
