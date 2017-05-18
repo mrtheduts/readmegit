@@ -114,7 +114,6 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
  
 ## Dicas
 
- - Você não precisa mais de uma conta premium para criar um repositório privado
  - Configurar seu editor de texto padrão: `git config --global core.editor "seu_editor"`
  - Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
  - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - É um plugin para seu zsh (seu terminal pode ser bash ou zsh). Com o tema `ZSH_THEME="agnoster"` configurado no seu arquivo .zshrc e o plugin do git habilitado (por padrão) fica simples ver em qual branch está e se as mudanças foram commitadas. Vale a pena dar uma olhada.
