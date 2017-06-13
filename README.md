@@ -122,11 +122,6 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
 #### Links específicos, mas possívelmente úteis:
  - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
 
-<br />
-
- > ***“Think twice, code once.”** <br />― Waseem Latif*
- 
- <br />
 
 ## Tarefas:
 - [X] Ler esse readme.
