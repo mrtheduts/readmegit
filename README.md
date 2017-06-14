@@ -132,3 +132,7 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
 <p align="center"> 
  <a href=https://imgs.xkcd.com/comics/new_bug.png><img src=https://imgs.xkcd.com/comics/new_bug.png a=https://imgs.xkcd.com/comics/new_bug.png></a>
 </p>
+
+**Autor: @mrtheduts**
+**Esse readme é de uso livre.**
+**Sugestões são bem-vindas.**
