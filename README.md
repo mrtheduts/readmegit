@@ -24,7 +24,7 @@ Há duas maneiras de configurar uma pasta de um repositório git:
 2. Entrar nela e inicializar o git : `$ git init`
 3. Realizar o pull request: `$ git pull https://github.com/usuario/repositorio`
 4. É preciso configurar o endereço do repositório: `$ git remote add origin https://github.com/user/repo`
- >Se enfrentar problemas para lidar com o endereço de origin, veja **Comandos**
+   >Se enfrentar problemas para lidar com o endereço de origin, veja **Comandos**
 5. Criar um branch pra você/sua implementação: `$ git checkout -b Nome`
 6. Dar push no branch: `$ git push origin Nome`
 7. **Codar hardmente**
