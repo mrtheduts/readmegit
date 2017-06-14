@@ -23,8 +23,8 @@ Há duas maneiras de configurar uma pasta de um repositório git:
 1. Criar uma pasta vazia/aproveitar uma pasta já existente
 2. Entrar nela e inicializar o git : `$ git init`
 3. Realizar o pull request: `$ git pull https://github.com/usuario/repositorio`
-4. É preciso configurar o caminho para o repositório: `$ git remote add origin https://github.com/user/repo`
- >Se enfrentar problemas para lidar com o endereço de origin, veja [Comandos](https://github.com/mrtheduts/readmegit#lidando-com-git-remote)
+4. É preciso configurar o endereço do repositório: `$ git remote add origin https://github.com/user/repo`
+ >Se enfrentar problemas para lidar com o endereço de origin, veja **Comandos**
 5. Criar um branch pra você/sua implementação: `$ git checkout -b Nome`
 6. Dar push no branch: `$ git push origin Nome`
 7. **Codar hardmente**
@@ -55,11 +55,11 @@ ou
     >`git log`, apenas, mostra os commits e seus autores, dentre outras informaçõe; `--oneline`, como o nome mostra, deixa de lado algumas informações e mostra apenas a hash e o comentario do commit; `--graph` imprime uma árvore do projeto e com `--decorate` ela é impressa de diferentes cores, baseadas em qual branch ela está.
     
 ### Lidando com `git remote`
- - Para verificar qual o link para o repositório: `$ git remote -v`
- - Para adicionar o link para um repositório:
+ - Para verificar qual o endereço do repositório: `$ git remote -v`
+ - Para adicionar o endereço do repositório:
    - Com https: `$ git remote add origin https://github.com/user/repo.git`
    - Com ssh: `$ git remote add origin ssh:git@github.com/user/repo.git`
- - Para remover o link para um repositório: `$ git remote remove origin`
+ - Para remover o endereço do repositório: `$ git remote remove origin`
 
 ### Usando Tags
 
