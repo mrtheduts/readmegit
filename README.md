@@ -124,7 +124,7 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
  - Configurar seu editor de texto padrão: `git config --global core.editor "seu_editor"`
  - Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
  - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) - É um plugin para seu zsh (seu terminal pode ser bash ou zsh). Com o tema `ZSH_THEME="agnoster"` configurado no seu arquivo .zshrc e o plugin do git habilitado (por padrão) fica simples ver em qual branch está e se as mudanças foram commitadas. Vale a pena dar uma olhada.
- 
+ - É legal automatizar as coisas com um [makefile](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/).
 
 #### Links específicos, mas possívelmente úteis:
  - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
