@@ -48,6 +48,7 @@ Há duas maneiras de configurar uma pasta como um repositório git:
 3. Dar push no branch: `$ git push origin nome`
 4. **Codar hardmente**
 
+<br />
 
 ## Começando a trabalhar
 
@@ -85,6 +86,8 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
     
   - Dê o upload das tags: `$ git push --tags`
   
+  <br />
+
 ## Branches
 
 <a href="https://xkcd.com/1421/" a="https://xkcd.com/1597/">
@@ -111,6 +114,8 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
 3. Resolva os conflitos
 4. Adicione, commite e dê push nas mudanças
 
+<br />
+
 ## Dicas
 
  - Configurar seu editor de texto padrão: `$ git config --global core.editor "seu_editor"`
@@ -119,6 +124,7 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
  - É produtivo automatizar certas tarefas com um [makefile](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
  - Se utiliza verificação em duas etapas, use uma [chave ssh](https://help.github.com/articles/connecting-to-github-with-ssh/) para se conectar pelo terminal.
  
+<br />
 
 ## Links para referência
 - [Git Docs](https://git-scm.com/documentation)
@@ -129,10 +135,11 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
 #### Links específicos, mas possivelmente úteis
  - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
 
+<br />
 
 ## Tarefas:
 - [X] Ler esse readme.
-- [ ] Modificar esse readme
+- [ ] Terminar esse readme.
 
 <br />
 
