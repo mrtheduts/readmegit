@@ -1,7 +1,7 @@
 # [Readmegit](https://www.github.com/mrtheduts/readmegit) 
 
 <a href="https://xkcd.com/1597/" a="https://xkcd.com/1597/">
- <img align = "right" src=https://imgs.xkcd.com/comics/git.png width="300"  hspace="20" vspace="5">
+ <img align = "right" src=https://imgs.xkcd.com/comics/git.png  hspace="20" vspace="5">
 </a>
 
 ## Índice:
@@ -14,7 +14,7 @@
    - [Lidando com branches](#lidando-com-branches)
    - [Deletando branches](#deletando-branches)
    - [Fundindo dois branches](#fundindo-dois-branches)
-4. [Cuidados](#cuidados)
+4. [Dicas](#dicas)
 5. [Links para referência](#links-para-referência)
    - [Links específicos mas possivelmente úteis](#links-específicos-mas-possivelmente-úteis)
 
@@ -48,11 +48,6 @@ Há duas maneiras de configurar uma pasta como um repositório git:
 3. Dar push no branch: `$ git push origin nome`
 4. **Codar hardmente**
 
-<br />
-
- >***“A code is like love, it has created with clear intentions at the beginning, but it can get complicated.”** <br />― Gerry Geek, Ice Breakers for Project Managers: Jokes, Quotes, and Brainteasers*
-
-<br />
 
 ## Começando a trabalhar
 
@@ -65,6 +60,13 @@ Há duas maneiras de configurar uma pasta como um repositório git:
  - Fazer upload para o repositório remoto: `$ git push origin <branch>`
  - Verificar os commits feitos e os seus autores: `$ git log [--oneline] [--graph]`
     >As flags são opcionais. `--oneline` deixa de lado algumas informações e mostra apenas a hash e o comentário do commit; `--graph` mostra os commits em estilo de grafo, com cada branch de uma cor;
+    
+    <br />
+
+<p align="center"> 
+ <a href=https://xkcd.com/1296/><img src=https://imgs.xkcd.com/comics/git_commit.png a=https://xkcd.com/1296/></a>
+</p>
+
     
 ### Lidando com `git remote`
  - Para verificar qual o endereço do repositório: `$ git remote -v`
@@ -82,15 +84,12 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
     >Sugestão: sendo x = 0 ou 1 (projeto completo ou não), y += 1 a cada função adicionada e z += 1 quando bugs são corrigidos
     
   - Dê o upload das tags: `$ git push --tags`
-
-<br />
-
-<p align="center"> 
- <a href=https://xkcd.com/1296/><img src=https://imgs.xkcd.com/comics/git_commit.png a=https://xkcd.com/1296/></a>
-</p>
-<br />
-
+  
 ## Branches
+
+<a href="https://xkcd.com/1421/" a="https://xkcd.com/1597/">
+ <img align = "right" src=https://imgs.xkcd.com/comics/future_self.png  hspace="20" vspace="5">
+</a>
 
 ### Lidando com branches
 
@@ -111,18 +110,6 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
     >Por que `--no-ff`? [`git merge` ou `git merge --no-ff`](http://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff)
 3. Resolva os conflitos
 4. Adicione, commite e dê push nas mudanças
- 
-## Cuidados
-
-- Não confunda a ordem dos adds, commits e pushes
-- Verifique se está no branch certo
-
-<br />
-
-<p align="center"> 
- <a href=https://xkcd.com/292/><img src=https://imgs.xkcd.com/comics/goto.png a="Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live” ― John Woods"></a>
-</p>
-<br />
 
 ## Dicas
 
@@ -130,6 +117,7 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
  - Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
  - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) é um ótimo plugin para seu terminal zsh (Ele pode ser bash, zsh, ksh...) com funcionalidades que auxiliam ao lidar com repositórios git
  - É produtivo automatizar certas tarefas com um [makefile](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
+ - Se utiliza verificação em duas etapas, use uma [chave ssh](https://help.github.com/articles/connecting-to-github-with-ssh/) para se conectar pelo terminal.
  
 
 ## Links para referência
@@ -149,7 +137,7 @@ Tags servem para manter um certo controle da versão "oficial" do programa, serv
 <br />
 
 <p align="center"> 
- <a href=https://imgs.xkcd.com/comics/new_bug.png><img src=https://imgs.xkcd.com/comics/new_bug.png a=https://imgs.xkcd.com/comics/new_bug.png></a>
+ <a href=https://xkcd.com/292/><img src=https://imgs.xkcd.com/comics/goto.png></a>
 </p>
 <br />
 
