@@ -1,153 +1,142 @@
-# [Readmegit](https://www.github.com/mrtheduts/readmegit) 
 
 <a href="https://xkcd.com/1597/" a="https://xkcd.com/1597/">
  <img align = "right" src=https://imgs.xkcd.com/comics/git.png  hspace="20" vspace="5">
 </a>
 
+# [Readmegit](https://www.github.com/mrtheduts/readmegit) 
+
 ## Índice:
 1. [Inicializando o repositório](#inicializando-o-repositório)
-2. [Começando a trabalhar](#começando-a-trabalhar)
-   - [Coisas básicas](#coisas-básicas) 
-   - [Lidando com `git-remote`](#lidando-com-git-remote)
-   - [Usando tags](#usando-tags)
-3. [Branches](#branches)
-   - [Lidando com branches](#lidando-com-branches)
-   - [Deletando branches](#deletando-branches)
-   - [Fundindo dois branches](#fundindo-dois-branches)
-4. [Dicas](#dicas)
-5. [Links para referência](#links-para-referência)
-   - [Links específicos mas possivelmente úteis](#links-específicos-mas-possivelmente-úteis)
+2. [Comandos](#comandos)
+   - [Gerenciar Mudanças](#gerenciar-mudanças) 
+   - [Lidar com `$ git branch` e `$ git checkout`](#lidar-com-%24-git-branch-e-%24-git-checkout)
+   - [Lidando com `$ git merge`](#lidando-com-%24-git-merge)
+   - [Lidar com `$ git remote`](#lidar-com-%24-git-remote)
+   - [Lidar com `$ git tag`](#lidar-com-%24-git-tag)
+3. [Dicas](#dicas)
+4. [Links para referência](#links-para-referência)
+    - [Guias](#guias)
+    - [Documentação](#documentação)
+    - [Diversos](#diversos)
 
-
-<br />
-<br />
-
-
-
-
-## Inicializando o repositório:
-
+## Inicializando o repositório
 Há duas maneiras de configurar uma pasta como um repositório git:
-#### 1. `$ git init`
-1. Criar uma pasta vazia/aproveitar uma pasta já existente
-2. Entrar nela e inicializar o git : `$ git init`
-3. Realizar o pull request: `$ git pull https://github.com/user/repo`
-4. Configurar o endereço remoto do repositório:
+#### 1. Através de `$ git init`
+1. Crie uma pasta vazia ou aproveite uma pasta já existente
+2. Entre nela e inicialize o repositório com o comando: `$ git init`
+3. Configure o endereço remoto do repositório:
    - Com https: `$ git remote add origin https://github.com/user/repo.git`
    - Com ssh: `$ git remote add origin ssh:git@github.com/user/repo.git`
-   >Se enfrentar problemas para lidar com o endereço remoto, veja [Começando a trabalhar](#começando-a-trabalhar)
-5. Criar um branch para sua implementação: `$ git checkout -b nome`
-6. Dar push no branch: `$ git push origin nome`
-7. **Codar hardmente**
+   > Mais informações sobre o uso de `$ git remote` na seção [Lidar com `$ git remote`](#lidar-com-%24-git-remote)
+4. Realize o _pull_: `$ git pull origin master`
+5. **Comece a trabalhar!**
 
-#### 2. `$ git clone`
-1. Clonar:
+#### 2. Ou de `$ git clone`
+1. Clone o repositório:
    - Com https: `$ git clone https://github.com/user/repo`
    - Com ssh: `$ git clone ssh:git@github.com/user/repo.git`
-2. Ir até a pasta e criar um branch para sua implementação: `$ git checkout -b nome`
-3. Dar push no branch: `$ git push origin nome`
-4. **Codar hardmente**
+2. **Comece a trabalhar!**
+
+## Comandos
+
+### Gerenciar mudanças
+ - Atualizar repositório local com as mudanças carregadas ao remoto: `$ git pull`
+ - Verificar os arquivos que foram modificados, adicionados e removidos: `$ git status`
+ - Verificar as mudanças feitas após o último _commit_: `$ git diff`
+ - Incluir adição ou mudança a ser registrada: `$ git add <caminho/para/arquivos>`
+ - Incluir remoção de arquivo a ser registrada: `$ git rm <caminho/para/arquivos>`
+ - Registrar suas mudanças: `$ git commit [-a] [-m "Mensagem"]`
+     >As _flags_ são opcionais.<br />
+     >`-a` Adiciona automaticamente as mudanças realizadas nos arquivos que já estavam sendo rastreados nesse _commit_;<br />
+     >`-m` Pula a etapa de abertura do editor de texto para a criação da mensagem de _commit_, utilizando diretamente a mensagem entre aspas;
+ - Carregar as mudanças registradas ao repositório remoto: `$ git push origin <branch>`
+    >\<branch\> é o _branch_ que está sendo modificado, como, por exemplo, o _master_.<br />
+    > Para maiores explicações, veja a seção [Lidar com `$ git branch` e `$ git checkout`](#lidar-com-%24-git-branch-e-%24-git-checkout)
+ - Verificar os _commits_ feitos em ordem cronológica: `$ git log [--oneline] [--graph]`
+    >As flags são opcionais.<br />
+    >`--graph` mostra os _commits_ em estilo de grafo, com cada _branch_ de uma cor;<br />
+    >`--oneline` Deixa de lado algumas informações e mostra apenas o ID e o comentário do _commit_;<br />
+    >No quadrinho abaixo há uma representação parecida com resultado do uso das duas _flags_ acima.
+ - Ver informações sobre um _commit_: `$ git show <ID do commit>`
 
 <br />
-
-## Começando a trabalhar
-
-### Coisas básicas
-
- - Verificar arquivos modificados, adicionados e/ou removidos: `$ git status`
- - Adicionar arquivos para serem rastreados pelo repositório: `$ git add <arquivos>`
- - Registrar suas mudanças: `$ git commit [-a] [-m "Sua mensagem aqui"]`
-     >As flags são opcionais. `-a` adiciona automaticamente os arquivos que foram modificados para esse commit; `-m` já realiza o commit com a mensagem entre aspas, pulando a etapa de abertura do editor de texto para a escrita do comentário.
- - Fazer upload para o repositório remoto: `$ git push origin <branch>`
- - Verificar os commits feitos e os seus autores: `$ git log [--oneline] [--graph]`
-    >As flags são opcionais. `--oneline` deixa de lado algumas informações e mostra apenas a hash e o comentário do commit; `--graph` mostra os commits em estilo de grafo, com cada branch de uma cor;
-    
-    <br />
-
 <p align="center"> 
  <a href=https://xkcd.com/1296/><img src=https://imgs.xkcd.com/comics/git_commit.png a=https://xkcd.com/1296/></a>
 </p>
 
-    
-### Lidando com `git remote`
- - Para verificar qual o endereço do repositório: `$ git remote -v`
- - Para adicionar o endereço do repositório:
-   - Com https: `$ git remote add origin https://github.com/user/repo.git`
-   - Com ssh: `$ git remote add origin ssh:git@github.com/user/repo.git`
- - Para remover o endereço do repositório: `$ git remote remove origin`
-
-### Usando Tags
-
-Tags servem para manter um certo controle da versão "oficial" do programa, servindo de atalho para certos commits. Elas podem ser lightweight e annotated. As lightweight só contém informações do autor da tag, da data e do hash do commit. Já as annotated (adicionando a flag `-a`) guardam informações extras como o que mudou no commit, o autor original do repositório e podem ser verificadas pelo Gnu Privacy Guard.
-
- - Atualize a tag: `$ git tag [-a] vx.y.z [-m "Mudança"]`
+### Lidar com `$ git branch` e `$ git checkout`
+_Branches_ são ramos de _commits_ que divergiram do "tronco" principal do repositório - ou até mesmo de outros _branches_. São muito úteis para o desenvolvimento paralelo de recursos, gerenciando mudanças de uma forma organizada, podendo ser integrados ao ramo principal quando estiverem prontos. O ramo azul no quadrinho acima é um exemplo de _branch_.
+ - Listar o _branches_ existentes, indicando o atual: `$ git branch [--all]`
+    > A flag é opcional.<br />
+    >`--all` Lista todos os _branches_ presentes no repositório local e no remoto;
+ - Criar um novo _branch_ a partir do _commit_ atual: `$ git branch <nome>`
+ - Mudar o _branch_ atual: `$ git checkout <nome>`
+    > O par de comandos acima pode ser substituído por `$ git checkout -b <nome>`, caso deseje criar um novo _branch_ e fazer dele seu atual.
+ - Deletar _branch_:
+    - Local: `$ git branch -d <nome>`
+    - Remoto: `$ git push origin --delete <nome>`
  
-    >Sugestão: sendo x = 0 ou 1 (projeto completo ou não), y += 1 a cada função adicionada e z += 1 quando bugs são corrigidos
-    
-  - Dê o upload das tags: `$ git push --tags`
-  
-  <br />
+### Lidando com `$ git merge`
+Dada a forma que o git gerencia as mudanças nos arquivos, é relativamente fácil unir duas versões de um ou vários arquivos, em _branches_ separados, por exemplo. No quadrinho acima, o ramo azul foi fundido no ramo verde. O passo-a-passo abaixo instrui como realizar um _merge_ entre dois _branches_.
+1. Mude para o _branch_ que receberá as mudanças: `$ git checkout <branch1>`
+2. Realize o _merge_ de `<branch2>` em `<branch1>`: `$ git merge [--no-ff] <branch2>`
+    > A flag é opcional.<br />
+    > `--no-ff` Impede que os _commits_ de `<branch2>` sejam incorporados à árvore de `<branch1>`, apagando a existência de `<branch2>` do _log_ do repositório;<br />
+    > Para mais informações, veja [differences between `git merge` and `git merge --no-ff`](http://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff)
+3. Resolva os possíveis conflitos, editando o que for necessário
+4. Adicione, registre e carregue as mudanças no repositório remoto normalmente
 
-## Branches
+### Lidar com `$ git remote`
+ - Listar os repositórios remotos registrados: `$ git remote show`
+ - Verificar qual o endereço do repositório remoto: `$ git remote get-url <nome>`
+ - Adicionar um novo repositório remoto:
+   - Com https: `$ git remote add <nome> https://github.com/user/repo.git`
+   - Com ssh: `$ git remote add <nome> ssh:git@github.com/user/repo.git`
+ - Remover o endereço do repositório: `$ git remote remove origin`
 
-<a href="https://xkcd.com/1421/" a="https://xkcd.com/1597/">
- <img align = "right" src=https://imgs.xkcd.com/comics/future_self.png  hspace="20" vspace="5">
-</a>
+### Lidar com `$ git tag`
 
-### Lidando com branches
-
- - Ver os branches existentes e em qual está: `$ git branch`
- - Criar novo branch: `$ git branch <nome>`
- - Mudar de branch: `$ git checkout <nome>`
- - Criar (caso não exista) e mudar de branch: `$ git checkout -b <nome>`
- 
-### Deletando branches
-
-- Localmente: `$ git branch -d <nome>`
-- Remotamente: `$ git push origin --delete <nome>`
- 
-### Fundindo dois branches
-
-1. Vá para o branch que continuará ativo
-2. `$ git merge [--no-ff] <branch no qual mudanças foram feitas>`
-    >Por que `--no-ff`? [`git merge` ou `git merge --no-ff`](http://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff)
-3. Resolva os conflitos
-4. Adicione, commite e dê push nas mudanças
-
-<br />
+ - Listar todas as _tags_ do repositório local: `$ git tag [-nX]`
+    > A _flag_ é opcional.<br />
+    > `-nX` Mostra as X primeiras linhas da mensagem da _tag_ ou do _commit_ correspondente.
+ - Criar uma _tag_ no _commit_ atual: `$ git tag <nome> [-a [-m "Mensagem"]]`
+    > As _flags_ são opcionais.<br />
+    > `-a` Cria uma flag _annotated_, isto é, uma _flag_ com informações sobre o usuário, a data e a hora de criação, assim como uma mensagem.<br />
+    >`-m` Pula a etapa de abertura do editor de texto para a criação da mensagem, utilizando diretamente a mensagem entre aspas;
+ - Ver informações de uma _tag_: `$ git show <nome>`
+ - Carregar as _tags_ ao repositório remoto: `$ git push --tags`
 
 ## Dicas
 
- - Configurar seu editor de texto padrão: `$ git config --global core.editor "seu_editor"`
- - Para não precisar dar login toda hora: `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
- - [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) é um ótimo plugin para seu terminal zsh (Ele pode ser bash, zsh, ksh...) com funcionalidades que auxiliam ao lidar com repositórios git
- - É produtivo automatizar certas tarefas com um [makefile](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/)
- - Se utiliza verificação em duas etapas, use uma [chave ssh](https://help.github.com/articles/connecting-to-github-with-ssh/) para se conectar pelo terminal.
- 
-<br />
+ - Configure seu editor de texto padrão:
+ `$ git config --global core.editor "seu_editor"`
+ - Para não precisar inserir as informações de login no repositório remoto a cada _push_:<br />
+ `$ git config credential.helper 'cache --timeout=<nºsegundos>'`
+ - Se utiliza verificação em duas etapas, use uma [chave ssh](https://docs.github.com/pt/github/authenticating-to-github/connecting-to-github-with-ssh) para se conectar.
 
 ## Links para referência
-- [Git Docs](https://git-scm.com/documentation)
-- [Blog do Git](https://git-scm.com/blog)
+<a href="https://xkcd.com/979/" a="https://xkcd.com/979/">
+ <img align = "right" src=https://imgs.xkcd.com/comics/wisdom_of_the_ancients.png  hspace="20" vspace="5">
+</a>
+
+### Guias
 - [Git - The Simple Guide](http://rogerdudler.github.io/git-guide/)
-- [Network Graph](https://github.com/blog/39-say-hello-to-the-network-graph-visualizer)
-
-#### Links específicos, mas possivelmente úteis
- - [How to merge changes to a single file](http://stackoverflow.com/questions/10784523/how-do-i-merge-changes-to-a-single-file-rather-than-merging-commits)
-
-<br />
+- [Learn Git branching](https://learngitbranching.js.org/?locale=pt_BR)
+- [Git Rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase)
+### Documentação
+- [Git Docs](https://git-scm.com/documentation)
+### Diversos
+- [A Successful Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/)
+- [Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
 ## Tarefas:
 - [X] Ler esse readme.
 - [ ] Terminar esse readme.
 
-<br />
+_Autor: [@mrtheduts](https://github.com/mrtheduts/)_<br />
+_Esse readme é de uso livre._ <br />
+_Sugestões são bem-vindas._
 
 <p align="center"> 
  <a href=https://xkcd.com/292/><img src=https://imgs.xkcd.com/comics/goto.png></a>
 </p>
-<br />
-
-*Autor: [@mrtheduts](https://github.com/mrtheduts/)*<br />
-*Esse readme é de uso livre.* <br />
-*Sugestões são bem-vindas.*
